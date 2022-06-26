@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(/imagenes/matthew-sleeper-_1yS4-SuEsw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.header .navbar{
+    /*background-color: transparent !important;*/
+    background-image: linear-gradient(to right, #148FBD, #166683);
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-areas: presentacion;
+    background-image: linear-gradient(to right, #148FBD, #166683);
+    text-align: center; 
+    font-size: smaller; 
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+.introCot {
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+.a:hover {
+    font-size: medium;
+} 
+
+
+.enunc {
+    display: grid;
+    grid-template-areas: contacto;
+    background-image: linear-gradient(to right, #148FBD, #166683);
+    text-align: center;
+    border: black solid;
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+.introGal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-areas: galeria;
+    background-image: linear-gradient(to right, #148FBD, #166683);
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+.introTes {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-areas: testimonio;
+    background-image: linear-gradient(to right, #148FBD, #166683);
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+.carousel-item{
+    text-align: center;
+    img{
+    margin: 0 auto;}
+}
+
+.sponsor {
+    color: black;
+    display: grid;
+    grid-template-areas: sponsors;
+    text-decoration: none;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    height: 100px;
+    width: 200px;
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+.linksp{
+    font-size: small;
+}
+.linksp:hover{
+    font-size: medium;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-areas: footer;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: grey;
+    animation-name: texto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+@keyframes texto {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gridPadre{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer ";
+    }
+    .sponsors{
+        display: none;
+    }
+}
